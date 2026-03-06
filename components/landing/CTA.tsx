@@ -2,7 +2,7 @@
 
 import { WaitlistForm } from "@/components/waitlist";
 
-export function CTA() {
+export function Cta() {
   return (
     <section className="bg-primary text-primary-foreground py-20">
       <div className="container mx-auto px-4 text-center">
@@ -14,7 +14,7 @@ export function CTA() {
             Join the waitlist and be among the first to experience AI-powered support that sets
             itself up.
           </p>
-          <div className="mx-auto max-w-md">
+          <div className="mx-auto max-w-md rounded-lg bg-background/10 p-4 backdrop-blur-sm">
             <WaitlistForm className="w-full" />
           </div>
           <p className="text-sm opacity-75">

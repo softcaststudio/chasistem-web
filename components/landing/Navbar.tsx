@@ -53,9 +53,15 @@ export function Navbar() {
 
         {/* Mobile Menu Button */}
         <button
-          className="p-2 md:hidden"
+          className="p-2 rounded-md focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 md:hidden"
           onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+          onKeyDown={(e) => {
+            if (e.key === "Escape" && isMobileMenuOpen) {
+              setIsMobileMenuOpen(false);
+            }
+          }}
           aria-label="Toggle menu"
+          aria-expanded={isMobileMenuOpen}
         >
           {isMobileMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
         </button>

@@ -3,6 +3,6 @@ export { Hero } from "./Hero";
 export { Features } from "./Features";
 export { HowItWorks } from "./HowItWorks";
 export { Pricing } from "./Pricing";
-export { FAQ } from "./FAQ";
-export { CTA } from "./CTA";
+export { Faq } from "./Faq";
+export { Cta } from "./Cta";
 export { Footer } from "./Footer";

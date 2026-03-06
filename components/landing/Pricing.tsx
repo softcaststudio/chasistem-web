@@ -54,7 +54,7 @@ export function Pricing() {
               <CardHeader className="pb-2 text-center">
                 <CardTitle className="text-xl">{tier.name}</CardTitle>
                 <div className="mt-4">
-                  <span className="text-4xl font-bold">\${tier.price}</span>
+                  <span className="text-4xl font-bold">${tier.price}</span>
                   <span className="text-muted-foreground">/month</span>
                 </div>
               </CardHeader>
@@ -62,7 +62,7 @@ export function Pricing() {
                 <ul className="space-y-3">
                   {tier.features.map((feature) => (
                     <li key={feature} className="flex items-start gap-2">
-                      <Check className="text-primary mt-0.5 h-5 w-5 shrink-0" />
+                      <Check className="text-primary mt-0.5 h-5 w-5 shrink-0" aria-hidden="true" />
                       <span className="text-sm">{feature}</span>
                     </li>
                   ))}

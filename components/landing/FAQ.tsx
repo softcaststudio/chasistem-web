@@ -40,7 +40,7 @@ const faqs = [
   },
 ];
 
-export function FAQ() {
+export function Faq() {
   return (
     <section id="faq" className="py-20">
       <div className="container mx-auto px-4">
