@@ -1,0 +1,26 @@
+# Render Blueprint for chasistem-web
+# Static Site deployment for Next.js static export
+#
+# Note: Static Sites cannot be created via Blueprint directly.
+# Use the Render Dashboard or MCP to create, then reference this config.
+
+services:
+  - type: static # Note: Use 'web' with 'runtime: static' for Blueprint compatibility
+    name: chasistem-web
+    region: oregon
+    plan: free
+    buildCommand: pnpm install && pnpm build
+    staticPublishPath: ./out
+    # Auto-deploy on push to main
+    autoDeploy: true
+    # Environment variables (build-time only for static)
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: NEXT_PUBLIC_API_BASE_URL
+        value: https://api.chasistem.com
+      # Analytics (blank values won't cause errors)
+      - key: NEXT_PUBLIC_POSTHOG_KEY
+        sync: false
+      - key: NEXT_PUBLIC_POSTHOG_HOST
+        sync: false
