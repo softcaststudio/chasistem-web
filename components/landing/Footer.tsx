@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { APP_NAME } from "@/lib/constants";
+import { APP_NAME, APP_TAGLINE } from "@/lib/constants";
 import { Twitter, Linkedin, Github } from "lucide-react";
 
 const footerLinks = {
@@ -39,9 +39,7 @@ export function Footer() {
             <Link href="/" className="text-xl font-bold">
               {APP_NAME}
             </Link>
-            <p className="text-muted-foreground mt-4 text-sm">
-              AI customer support that sets itself up.
-            </p>
+            <p className="text-muted-foreground mt-4 text-sm">{APP_TAGLINE}</p>
             <div className="mt-4 flex gap-4">
               {socialLinks.map((social) => (
                 <a

@@ -6,23 +6,23 @@ import { Bot, Headphones, Wand2 } from "lucide-react";
 const features = [
   {
     icon: Bot,
-    title: "AI #1: Customer-Facing",
+    title: "AI #1: 24/7 Customer Chatbot",
     description:
-      "24/7 intelligent chat widget that answers FAQs and resolves common issues instantly. Your customers get help, even when you are asleep.",
+      "Intelligent chatbot powered by LLM that answers customer questions anytime. Context-aware conversations that understand your business, with seamless handoff to human agents when needed.",
     highlight: false,
   },
   {
     icon: Headphones,
-    title: "AI #2: Agent-Facing",
+    title: "AI #2: Agent Copilot",
     description:
-      "Smart copilot that drafts responses, summarizes context, and prioritizes tickets. Your support team works faster and smarter.",
+      "Smart assistant that drafts responses for your team to review. Prioritizes tickets by urgency, summarizes customer context, and suggests relevant knowledge base articles—so your agents work faster.",
     highlight: false,
   },
   {
     icon: Wand2,
-    title: "AI #3: Builder-Facing",
+    title: "AI #3: Guided Setup AI",
     description:
-      "No-code setup wizard that ingests your docs and configures everything automatically. The AI that sets up your AI support.",
+      "Upload your existing docs and our AI extracts knowledge automatically. Identifies gaps in your content and guides you to fill them. Step-by-step setup wizard with ongoing recommendations to improve over time.",
     highlight: true,
   },
 ];

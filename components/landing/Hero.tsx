@@ -26,7 +26,7 @@ export function Hero() {
 
           {/* Trust Indicators */}
           <div className="text-muted-foreground pt-8 text-sm">
-            <p>No credit card required • Setup in 5 minutes • Cancel anytime</p>
+            <p>No credit card required • Guided setup process • Clear improvement path</p>
           </div>
         </div>
 

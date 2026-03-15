@@ -13,9 +13,9 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Chasistem - AI Customer Support That Sets Itself Up",
+  title: "Chasistem - AI Support You Can Actually Improve",
   description:
-    "The only 3-way AI support platform for small businesses. No technical setup required. Customer-facing chat, agent copilot, and builder-facing AI working together.",
+    "Upload your docs. Our AI shows you exactly how to make it better. Clear guidance on what's missing, what to fix, and how to get great results.",
   keywords: [
     "AI customer support",
     "helpdesk automation",
@@ -23,21 +23,23 @@ export const metadata: Metadata = {
     "support automation",
     "small business",
     "customer service AI",
+    "guided setup",
+    "knowledge base",
   ],
   authors: [{ name: "Chasistem" }],
   openGraph: {
-    title: "Chasistem - AI Customer Support That Sets Itself Up",
+    title: "Chasistem - AI Support You Can Actually Improve",
     description:
-      "The only 3-way AI support platform for small businesses. No technical setup required.",
+      "Upload your docs. Our AI shows you exactly how to make it better. Clear guidance on what's missing and how to get great results.",
     type: "website",
     locale: "en_US",
     siteName: "Chasistem",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Chasistem - AI Customer Support That Sets Itself Up",
+    title: "Chasistem - AI Support You Can Actually Improve",
     description:
-      "The only 3-way AI support platform for small businesses. No technical setup required.",
+      "Upload your docs. Our AI shows you exactly how to make it better. Clear guidance on what's missing and how to get great results.",
   },
 };
 

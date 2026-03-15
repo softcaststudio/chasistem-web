@@ -12,11 +12,12 @@ type FormState = "idle" | "loading" | "success" | "error";
 interface WaitlistFormProps {
   onSuccess?: () => void;
   className?: string;
+  variant?: "default" | "primary";
 }
 
 const EMAIL_REGEX = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
-export function WaitlistForm({ onSuccess, className }: Readonly<WaitlistFormProps>) {
+export function WaitlistForm({ onSuccess, className, variant = "default" }: Readonly<WaitlistFormProps>) {
   const [email, setEmail] = useState("");
   const [state, setState] = useState<FormState>("idle");
   const [errorMessage, setErrorMessage] = useState("");
@@ -84,7 +85,7 @@ export function WaitlistForm({ onSuccess, className }: Readonly<WaitlistFormProp
   };
 
   if (state === "success") {
-    return <WaitlistSuccess />;
+    return <WaitlistSuccess variant={variant} />;
   }
 
   return (
@@ -105,7 +106,7 @@ export function WaitlistForm({ onSuccess, className }: Readonly<WaitlistFormProp
             }
           }}
           disabled={state === "loading"}
-          className="h-12 flex-1 px-4 text-base"
+          className={`h-12 flex-1 px-4 text-base ${variant === "primary" ? "bg-white text-foreground placeholder:text-muted-foreground" : ""}`}
           aria-label="Email address"
           aria-describedby={state === "error" ? "email-error" : undefined}
         />

@@ -68,7 +68,9 @@ styles/             # Global styles
 
 - **Tailwind CSS** for all styling
 - Use Tailwind utilities directly in components
-- Global styles in `styles/globals.css`
+- Global styles in `app/globals.css`
+- **Brand Theme**: Warm Indigo - see `docs/brand-theme.md` for color system and usage guidelines
+- Always use semantic Tailwind classes (e.g., `text-primary`, `bg-primary`) instead of hardcoded colors
 
 ### AI Integration
 

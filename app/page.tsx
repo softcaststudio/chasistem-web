@@ -1,6 +1,7 @@
 import {
   Navbar,
   Hero,
+  Problem,
   Features,
   HowItWorks,
   Pricing,
@@ -21,6 +22,7 @@ export default function Home() {
       <Navbar />
       <main id="main-content">
         <Hero />
+        <Problem />
         <Features />
         <HowItWorks />
         <Pricing />
