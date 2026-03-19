@@ -23,7 +23,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 | **Database** | Supabase (PostgreSQL + pgvector)                |
 | **AI**       | OpenAI/Anthropic via ai-sdk.dev                 |
 | **Payments** | Stripe                                          |
-| **Hosting**  | Cloudflare Pages (frontend) / Railway (backend) |
+| **Hosting**  | Render (frontend static site + backend API) |
 
 ## Commands
 
@@ -107,3 +107,4 @@ Market research and architecture decisions are in the sibling `market-research` 
 
 - `ACTION-PLAN-3-WAY-AI-SUPPORT.md` - Full product spec and roadmap
 - `ARCHITECTURE.md` - Stack decision rationale
+- `docs/sub-processors.md` - Approved third-party services that touch user data (must stay in sync with `app/privacy/page.tsx`)

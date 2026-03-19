@@ -26,6 +26,7 @@ export const metadata: Metadata = {
     "guided setup",
     "knowledge base",
   ],
+  metadataBase: new URL("https://chasistem.com"),
   authors: [{ name: "Chasistem" }],
   openGraph: {
     title: "Chasistem - AI Support You Can Actually Improve",
